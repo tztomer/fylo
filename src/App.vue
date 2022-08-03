@@ -8,7 +8,7 @@
         </div>
 
         <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p
+        <p v-font-size
           >Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and
           co-workers.
         </p>
@@ -27,6 +27,9 @@
           <a href="">See how Fylo works <span class="material-icons"> arrow_forward </span></a>
         </div>
       </section>
+      <section class="sec-four">
+        <reviewList v-for="(review, idx) in reviews" :review="review" :key="idx"></reviewList>
+      </section>
     </main>
   </div>
 </template>
@@ -35,15 +38,18 @@
   import { service } from '../src/service/service.js';
   import appHeader from '../src/components/app-header.vue';
   import featureList from '../src/components/feature-list.vue';
+  import reviewList from './components/review-list.vue';
   export default {
     data() {
       return {
         features: service.query(),
+        reviews: service.getReview(),
       };
     },
     components: {
       appHeader,
       featureList,
+      reviewList,
     },
   };
 </script>
