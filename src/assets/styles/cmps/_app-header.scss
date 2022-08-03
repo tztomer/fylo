@@ -1,0 +1,14 @@
+header {
+  padding-block-start: 73px;
+  padding-block-end: 73px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    max-height: 52px;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+  }
+}
