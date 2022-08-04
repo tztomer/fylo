@@ -39,6 +39,7 @@
   import appHeader from '../src/components/app-header.vue';
   import featureList from '../src/components/feature-list.vue';
   import reviewList from './components/review-list.vue';
+
   export default {
     data() {
       return {
