@@ -4,7 +4,7 @@
     <main>
       <section class="sec-one">
         <div class="img-sec-one-wrapper">
-          <img src="@/assets/img/sec-one-img.svg" alt="" srcset="" />
+          <img src="/sec-one-img.svg" alt="" srcset="" />
         </div>
 
         <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -18,7 +18,7 @@
         <feature-list v-for="(feature, idx) in features" :feature="feature" :key="idx" />
       </section>
       <section class="sec-tree">
-        <img src="@/assets/img/sec-3-img.svg" alt="" srcset="" />
+        <img src="/sec-3-img.svg" alt="" srcset="" />
 
         <div class="sec-tree-content">
           <h2>Stay productive, wherever you are</h2>

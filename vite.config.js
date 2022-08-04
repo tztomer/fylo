@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('/src', import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/fylo',
+  base: '/fylo/',
   build: {
     // outDir: '../backend/public',
     // emptyOutDir: true,
@@ -18,3 +18,7 @@ export default defineConfig({
     publicPath: process.env.NODE_ENV === 'production' ? '/fylo/' : '/',
   },
 });
+
+// function getImageUrl(name) {
+//   return new URL(`./dir/${name}.png`, import.meta.url).href
+// }
