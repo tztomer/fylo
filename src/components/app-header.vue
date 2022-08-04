@@ -2,7 +2,7 @@
   <header>
     <nav>
       <div class="logo-header">
-        <img src="../assets/img/fylo-logo.png" alt="" />
+        <img src="@/assets/img/fylo-logo.png" alt="" />
       </div>
       <ul class="nav-links">
         <li><a href="">Features</a> </li>

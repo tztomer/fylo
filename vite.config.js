@@ -10,12 +10,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-
+  base: '/fylo',
   build: {
     // outDir: '../backend/public',
     // emptyOutDir: true,
     // chunkSizeWarningLimit: 2500,
-
     publicPath: process.env.NODE_ENV === 'production' ? '/fylo/' : '/',
   },
 });
