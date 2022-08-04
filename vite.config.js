@@ -12,8 +12,10 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../backend/public',
-    emptyOutDir: true,
-    chunkSizeWarningLimit: 2500,
+    // outDir: '../backend/public',
+    // emptyOutDir: true,
+    // chunkSizeWarningLimit: 2500,
+
+    publicPath: process.env.NODE_ENV === 'production' ? '/fylo/' : '/',
   },
 });
