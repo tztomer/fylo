@@ -18,7 +18,7 @@
         <feature-list v-for="(feature, idx) in features" :feature="feature" :key="idx" />
       </section>
       <section class="sec-tree">
-        <img src="src/assets/img/sec-3-img.svg" alt="" srcset="" />
+        <img src="../src/assets/img/sec-3-img.svg" alt="" srcset="" />
 
         <div class="sec-tree-content">
           <h2>Stay productive, wherever you are</h2>
